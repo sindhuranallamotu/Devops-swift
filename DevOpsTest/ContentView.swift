@@ -42,7 +42,7 @@ struct ContentView: View {
         }
     }
 
-    var fail1 = "This variable should fail the test as it's too short"
+    var fail = "This variable should fail the test as it's too short"
     
     private func addItem() {
         withAnimation {
