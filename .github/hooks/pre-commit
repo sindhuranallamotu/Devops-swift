@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Run ESLint on staged files using the locally installed ESLint binary
+npx eslint --ignore-path .gitignore --max-warnings=0 --ext .js .
+
+# Capture exit status
+ESLINT_STATUS=$?
+
+# If ESLint returns an error (indicating rule violations), print a message and prevent the commit
+if [ $ESLINT_STATUS -ne 0 ]; then
+    echo "ESLint found errors. Commit aborted."
+    exit 1
+fi
+
+# If no errors were found, allow the commit to proceed
+exit 0
