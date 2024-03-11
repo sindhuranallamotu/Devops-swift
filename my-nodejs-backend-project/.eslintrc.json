@@ -7,8 +7,9 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "plugins": ["custom"],
     "rules": {
-    'my-custom-rules/variable-name-length': 'Variable names must be no shorter than 5 characters and no longer than 20 characters',
-    'my-custom-rules/variable-name-camelcase': 'Variable names must be written in camel case'
+        "custom/variable-name-camelcase": "error",
+        "custom/variable-name-length": "error"
     }
 }
