@@ -8,4 +8,4 @@ variablesRoute.js-this define routes and request handlers for managing variables
 2)I have created the  the github action workflow and precommithooks in .gitgub folder to enforce the rules for variablenames in the swift ui project the pre-commit hook runs ESLint locally to enforce linting standards before commits and This workflow will run SwiftLint, a tool to enforce Swift style and conventions, on swift UI
 3)By using the ESLint i have written the customised script for variable name and camelcase and defined these rules in eslint.json 
 
-
+How ever we can rely on third party tools like sonar cube scan and aptscan,code we will integrate them with the pipeline and check these kind of validations.
